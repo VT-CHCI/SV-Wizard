@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Conference:</strong>
+  <%= @enrollment.conference %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @enrollment.user %>
+</p>
+
+<p>
+  <strong>Enrollment status:</strong>
+  <%= @enrollment.enrollment_status %>
+</p>
+
+<p>
+  <strong>Lottery:</strong>
+  <%= @enrollment.lottery %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @enrollment.comment %>
+</p>
+
+<%= link_to 'Edit', edit_enrollment_path(@enrollment) %> |
+<%= link_to 'Back', enrollments_path %>

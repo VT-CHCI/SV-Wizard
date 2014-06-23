@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  conference_id: 
+  user_id: 
+  enrollment_status_id: 
+  lottery: 1
+  comment: MyString
+
+two:
+  conference_id: 
+  user_id: 
+  enrollment_status_id: 
+  lottery: 1
+  comment: MyString

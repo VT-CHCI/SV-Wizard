@@ -1,0 +1,21 @@
+#may want to have devise views for customization: rails g devise:views
+
+rails generate scaffold Conference name:string short_name:string year:integer email:string volunteers:integer volunteer_hours:integer start_date:date end_date:date bid_day:integer status:integer maintenance:boolean
+
+rails generate scaffold Location name:string description:text 
+
+rails generate scaffold Task conference:references name:string description:text location:references day:integer start_time:time end_time:time slots:integer hours:float priority:integer invisible:boolean
+
+rails generate devise User
+
+rails generate scaffold AssignmentStatus name:string
+
+rails generate scaffold Assignment user:references task:references hours:float comment:string
+
+rails generate scaffold EnrollmentStatus name:string
+
+rails generate scaffold Enrollment conference:references user:references enrollment_status:references lottery:integer comment:string
+
+rails generate scaffold Ticket user:references 
+
+rails generate scaffold ConferenceStatus name:string

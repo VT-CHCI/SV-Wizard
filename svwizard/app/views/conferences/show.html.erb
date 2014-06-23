@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @conference.name %>
+</p>
+
+<p>
+  <strong>Short name:</strong>
+  <%= @conference.short_name %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @conference.year %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @conference.email %>
+</p>
+
+<p>
+  <strong>Volunteers:</strong>
+  <%= @conference.volunteers %>
+</p>
+
+<p>
+  <strong>Volunteer hours:</strong>
+  <%= @conference.volunteer_hours %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @conference.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @conference.end_date %>
+</p>
+
+<p>
+  <strong>Bid day:</strong>
+  <%= @conference.bid_day %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @conference.status %>
+</p>
+
+<p>
+  <strong>Maintenance:</strong>
+  <%= @conference.maintenance %>
+</p>
+
+<%= link_to 'Edit', edit_conference_path(@conference) %> |
+<%= link_to 'Back', conferences_path %>

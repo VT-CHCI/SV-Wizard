@@ -1,0 +1,2 @@
+module ConferenceStatusesHelper
+end

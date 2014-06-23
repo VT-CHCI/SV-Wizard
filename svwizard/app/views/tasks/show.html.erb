@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Conference:</strong>
+  <%= @task.conference %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @task.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @task.description %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @task.location %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @task.day %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @task.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @task.end_time %>
+</p>
+
+<p>
+  <strong>Slots:</strong>
+  <%= @task.slots %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @task.hours %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @task.priority %>
+</p>
+
+<p>
+  <strong>Invisible:</strong>
+  <%= @task.invisible %>
+</p>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

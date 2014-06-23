@@ -1,0 +1,61 @@
+<%= form_for(@conference) do |f| %>
+  <% if @conference.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@conference.errors.count, "error") %> prohibited this conference from being saved:</h2>
+
+      <ul>
+      <% @conference.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :short_name %><br>
+    <%= f.text_field :short_name %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.number_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :volunteers %><br>
+    <%= f.number_field :volunteers %>
+  </div>
+  <div class="field">
+    <%= f.label :volunteer_hours %><br>
+    <%= f.number_field :volunteer_hours %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br>
+    <%= f.date_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :bid_day %><br>
+    <%= f.number_field :bid_day %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.number_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :maintenance %><br>
+    <%= f.check_box :maintenance %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
